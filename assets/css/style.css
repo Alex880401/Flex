@@ -107,4 +107,11 @@ html {
 
 .count-item {
     width: 30%;
+    color: gray;
+}
+
+.count {
+    font-size: 2.6rem;
+    font-weight: 200;
+    
 }
