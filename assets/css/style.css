@@ -4,9 +4,9 @@
     box-sizing: border-box;
 }
 
-body {
+html {
     font-size: 16px;
-    font-style: arial, sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
     text-align: center;
 }
 
@@ -23,8 +23,6 @@ body {
 .user-card {
     width: 400px;
     height: 500px;
-    border: 1px solid black;
-    border-radius: 1rem;
     margin: auto;
     display: flex;
     flex-direction: column;
@@ -36,7 +34,6 @@ body {
     padding: 2rem 2rem 0;
     border-radius: 1rem 1rem 0 0;
     background: linear-gradient(to top, rgb(129, 111, 194), transparent 200%);
-
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -44,32 +41,32 @@ body {
 }
 
 .buttons {
-    display: flex;
-    justify-content: space-between;
     width: 100%;
+    display: flex;
+    justify-content: space-between;  
 }
 
 .btn {
     border: none;
     background: none;
     color: #f1e6f5;
+    font-size: 1.5rem;
 }
 
 .user-photo {
-    width: 150px;
-    height: 150px;
+    width: 170px;
+    height: 170px;
     border: 1px solid rgb(156, 161, 192);
     border-radius: 50%;
     padding: 5px;
     object-fit: cover;
-    margin-top: -0.5rem;
+    margin-top: -1.5rem;
 }
 
 .user-info {
-    width: 100%;
-    color: white;
     text-align: center;
     margin: 2.5rem 0;
+    color: white;
 }
 
 .card-footer {
@@ -93,13 +90,12 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    font-size: 1.5rem;
 }
-
 
 .count-container {
     margin: auto;
-    display: flex;
-    
+    display: flex; 
 }
 
 .count {
