@@ -17,33 +17,38 @@ html {
     background-size: cover;
     background-position: center;
     display: flex;
+    justify-content: center;
     align-items: center;
 }
 
 .user-card {
-    width: 400px;
-    height: 500px;
-    margin: auto;
+    flex-basis: 370px;
+    min-width: calc(200px + 4rem);
+    /*width: 400px;*/
+    /*height: 500px;*/
+    /*margin: auto;*/
     display: flex;
     flex-direction: column;
-    align-items: center;
+    /*align-items: center;*/
+    flex-shrink: 1;
 }
 
 .card-main {
-    width: 100%;
+    /*width: 100%;*/
+    min-height: 350px;
     padding: 2rem 2rem 0;
     border-radius: 1rem 1rem 0 0;
     background: linear-gradient(to top, rgb(129, 111, 194), transparent 200%);
     display: flex;
     flex-direction: column;
+    justify-content: center;
     align-items: center;
-    
 }
 
 .buttons {
-    width: 100%; /*align items str*/
     display: flex;
-    justify-content: space-between;  
+    justify-content: space-between; 
+    align-self: stretch; 
 }
 
 .btn {
@@ -61,11 +66,13 @@ html {
     padding: 5px;
     object-fit: cover;
     margin-top: -1.2rem;
+    margin-bottom: auto;
 }
 
 .user-info {
-    text-align: center;
-    margin: 2rem 0;
+    /*text-align: center;*/
+    /*margin: 2rem 0;*/
+    margin-bottom: auto;
     color: white;
 }
 
@@ -75,8 +82,8 @@ html {
 }
 
 .card-footer {
-    width: 100%;
-    height: 100%;
+    /*width: 100%;*/
+    /*height: 100%;*/
     padding: 0 2rem 2rem;
     background-color: white;
     border-radius: 0 0 1rem 1rem;
@@ -91,7 +98,7 @@ html {
     background-color: rgb(178, 162, 236);
     color: white;
     margin-top: -25px;
-    margin-left: auto; /*align self*/
+    align-self: flex-end;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -101,13 +108,18 @@ html {
 .count-container {
     margin: auto 0;
     display: flex;
-    justify-content: space-between; 
+    /*justify-content: space-between; */
+    justify-content: center;
     align-items: center;
+    flex-wrap: wrap;
+    gap: 0.5rem;
 }
 
 .count-item {
-    width: 30%;
+    /*width: 30%;*/
     color: gray;
+    flex-basis: 6rem;
+    flex-shrink: 0;
 }
 
 .count {
