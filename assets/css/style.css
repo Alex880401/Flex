@@ -41,7 +41,7 @@ html {
 }
 
 .buttons {
-    width: 100%;
+    width: 100%; /*align items str*/
     display: flex;
     justify-content: space-between;  
 }
@@ -91,7 +91,7 @@ html {
     background-color: rgb(178, 162, 236);
     color: white;
     margin-top: -25px;
-    margin-left: auto;
+    margin-left: auto; /*align self*/
     display: flex;
     justify-content: center;
     align-items: center;
