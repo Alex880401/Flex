@@ -10,25 +10,40 @@ html {
     text-align: center;
 }
 
-.container {
-    height: 100vh;
+main {
+    min-height: 100vh;
     background-color: blueviolet;
     background-image: url("/assets/images/bg-2.jpg");
     background-size: cover;
     background-position: center;
     display: flex;
+    flex-direction: column;
     justify-content: center;
-    align-items: center;
+}
+
+.container {
+    /*height: 100vh;
+    background-color: blueviolet;
+    background-image: url("/assets/images/bg-2.jpg");
+    background-size: cover;
+    background-position: center;*/
+    display: flex;
+    justify-content: center;
+    /*align-items: stretch;*/
     gap: 1rem;
     flex-wrap: wrap;
 }
 
 .user-card {
-    flex-basis: 23rem;
-    min-width: calc(200px + 4rem);
+    flex-basis: 22rem;
+    min-width: 15rem;
+    max-width: 24rem;
+   /* max-height: 37rem;*/
     display: flex;
     flex-direction: column;
-    flex-shrink: 1;
+    /*flex-shrink: 1;*/
+    flex-grow: 1;
+    
 }
 
 .card-main {
@@ -38,14 +53,14 @@ html {
     background: linear-gradient(to top, rgb(129, 111, 194), transparent 200%);
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    /*justify-content: center;*/
     align-items: center;
 }
 
 .buttons {
     display: flex;
     justify-content: space-between; 
-    align-self: stretch; 
+    align-self: stretch;
 }
 
 .btn {
@@ -77,12 +92,13 @@ html {
 }
 
 .card-footer {
-    min-height: 9rem;
+    /*min-height: 9rem;*/
     padding: 0 2rem 2rem;
     background-color: white;
     border-radius: 0 0 1rem 1rem;
     display: flex;
     flex-direction: column;
+    flex-grow: 1;
 }
 
 .feather-btn{
@@ -100,12 +116,14 @@ html {
 }
 
 .count-container {
-    margin: auto 0;
+    margin: auto;
     display: flex;
     justify-content: center;
-    align-items: center;
+    /*align-items: center;*/
     flex-wrap: wrap;
     gap: 0.5rem;
+    /*flex-grow: 1;*/
+    /*max-height: 15rem;*/
 }
 
 .count-item {
@@ -117,5 +135,4 @@ html {
 .count {
     font-size: 2.6rem;
     font-weight: 200;
-    
 }
