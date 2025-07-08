@@ -13,7 +13,7 @@ html {
 
 main {
     min-height: 100vh;
-    background-color: blueviolet;
+    background-color: rgb(70, 143, 211);
     background-image: url("./../images/bg-2.jpg");
     background-size: cover;
     background-position: center;
