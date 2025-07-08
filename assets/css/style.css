@@ -14,7 +14,6 @@ html {
 main {
     min-height: 100vh;
     background-color: blueviolet;
-    /*background-image: url("/assets/images/bg-2.jpg");*/
     background-image: url("./../images/bg-2.jpg");
     background-size: cover;
     background-position: center;
@@ -24,15 +23,9 @@ main {
 }
 
 .container {
-    /*height: 100vh;
-    background-color: blueviolet;
-    background-image: url("/assets/images/bg-2.jpg");
-    background-size: cover;
-    background-position: center;*/
     padding: 1rem;
     display: flex;
     justify-content: center;
-    /*align-items: stretch;*/
     gap: 1rem;
     flex-wrap: wrap;
 }
@@ -41,10 +34,8 @@ main {
     flex-basis: 23rem;
     min-width: 15rem;
     max-width: 25rem;
-   /* max-height: 37rem;*/
     display: flex;
     flex-direction: column;
-    /*flex-shrink: 1;*/
     flex-grow: 1;
     
 }
@@ -57,13 +48,12 @@ main {
     background: linear-gradient(to top, rgb(129, 111, 194), transparent 200%);
     display: flex;
     flex-direction: column;
-    /*justify-content: center;*/
     align-items: center;
 }
 
 .buttons {
     display: flex;
-    justify-content: space-between; 
+    justify-content: space-between;
     align-self: stretch;
 }
 
@@ -123,11 +113,8 @@ main {
     margin: auto;
     display: flex;
     justify-content: center;
-    /*align-items: center;*/
     flex-wrap: wrap;
     gap: 0.7rem;
-    /*flex-grow: 1;*/
-    /*max-height: 15rem;*/
 }
 
 .count-item {
