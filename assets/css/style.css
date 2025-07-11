@@ -5,6 +5,8 @@
 }
 
 html {
+    --card-size: 16px;
+    --item-size: 16px;
     font-size: 16px;
     line-height: 1.1;
     font-family: "M PLUS Rounded 1c", Arial, Helvetica, sans-serif;
@@ -23,17 +25,17 @@ main {
 }
 
 .container {
-    padding: 1rem;
+    padding: var(--card-size);
     display: flex;
     justify-content: center;
-    gap: 1rem;
+    gap: var(--card-size);
     flex-wrap: wrap;
 }
 
 .user-card {
-    flex-basis: 23rem;
-    min-width: 15rem;
-    max-width: 25rem;
+    flex-basis: calc( var(--card-size) * 23);
+    min-width: calc( var(--card-size) * 15);
+    max-width: calc( var(--card-size) * 25);
     display: flex;
     flex-direction: column;
     flex-grow: 1;
@@ -42,9 +44,9 @@ main {
 
 .card-main {
     line-height: initial;
-    min-height: 22rem;
-    padding: 2rem 2rem 0;
-    border-radius: 1rem 1rem 0 0;
+    min-height: calc( var(--card-size) * 22);
+    padding: calc( var(--card-size) * 2) calc( var(--card-size) * 2) 0;
+    border-radius: var(--card-size) var(--card-size) 0 0;
     background: linear-gradient(to top, rgb(129, 111, 194), transparent 200%);
     display: flex;
     flex-direction: column;
@@ -65,11 +67,11 @@ main {
 }
 
 .user-photo {
-    width: 12rem;
-    height: 12rem;
-    border: 1px solid rgb(156, 161, 192);
+    width: calc( var(--item-size) * 12);
+    height: calc( var(--item-size) * 12);
+    border: calc(var(--item-size) / 16) solid rgb(156, 161, 192);
     border-radius: 50%;
-    padding: 0.3rem;
+    padding: calc( var(--item-size) * 0.3);
     object-fit: cover;
     margin-top: -1.2rem;
     margin-bottom: auto;
@@ -86,22 +88,22 @@ main {
 }
 
 .card-footer {
-    min-height: 9rem;
-    padding: 0 2rem 2rem;
+    min-height: calc( var(--card-size) * 9);
+    padding: 0 calc( var(--card-size) * 2) calc( var(--card-size) * 2);
     background-color: white;
-    border-radius: 0 0 1rem 1rem;
+    border-radius: 0 0 var(--card-size) var(--card-size);
     display: flex;
     flex-direction: column;
     flex-grow: 1;
 }
 
 .feather-btn{
-    width: 3rem;
-    height: 3rem;
+    width: calc( var(--item-size) * 3);
+    height: calc( var(--item-size) * 3);
     border-radius: 50%;
     background-color: rgb(178, 162, 236);
     color: white;
-    margin-top: -1.5rem;
+    margin-top: calc( var(--item-size) * -1.5);
     align-self: flex-end;
     display: flex;
     justify-content: center;
@@ -114,12 +116,12 @@ main {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    gap: 0.7rem;
+    gap: calc( var(--card-size) * 0.7);
 }
 
 .count-item {
     color: gray;
-    flex-basis: 6rem;
+    flex-basis: calc( var(--card-size) * 6);
     flex-shrink: 0;
 }
 
